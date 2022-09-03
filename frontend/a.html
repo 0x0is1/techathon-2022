@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="sqr"></div>
+    <div class="circ"></div>
+    <div class="circ"></div>
+    <div class="circ"></div>
+    <div class="circ"></div>
+</div>
+<style>
+    .container {
+        display: flex;
+        position: absolute;
+        top: 0;
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .circ {
+        position: absolute;
+        width: 60px;
+        aspect-ratio: 1;
+        border-radius: 50%;
+        border: 10px solid white;
+    }
+
+    body {
+        background: #09042A;
+    }
+
+    .sqr {
+        position: absolute;
+        width: 80px;
+        height: 50px;
+        background: #E78481;
+    }
+
+    .circ:nth-child(2) {
+        background: red;
+    }
+
+    .circ:nth-child(2) {
+        background: #F5BB9C;
+        top: 58;
+        border-color: #09042A;
+    }
+
+    .circ:nth-child(3) {
+        background: #F5BB9C;
+        right: 100;
+        background: #09042A;
+        border-color: #E78481;
+
+    }
+
+    .circ:nth-child(4) {
+        background: #09042A;
+        border-color: #E78481;
+        left: 100;
+
+    }
+</style>

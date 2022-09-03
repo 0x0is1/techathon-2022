@@ -1,0 +1,187 @@
+
+.home-content-main{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2f363e;
+    justify-content: space-around;
+    transition: all 0.3s ease;
+    min-height: 130vh;
+}
+
+.container{
+    position: relative;
+    width: 450px;
+    min-height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2f363f;
+    margin-top: -100px;
+    box-shadow: 25px 25px 75px rgba(0, 0, 0, 0.25),
+    10px 10px 70px rgba(0, 0, 0, 0.25),
+    inset 5px 5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 20px rgba(255, 255, 255, 0.2),
+    inset -5px -5px 15px rgba(0, 0, 0, 0.75);
+
+    border-radius: 30px;
+    padding: 50px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.container h3{
+    color: #fff;
+    font-weight: 600;
+    font-size: 2em;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.container form{
+    position: relative;
+    width: 100%;
+}
+
+.container .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container span{
+    display: inline-block;
+    color: #fff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1em;
+    border-left: 4px solid #fff;
+    padding-left: 4px;
+    line-height: 1em;
+}
+
+.container .box{
+    display: flex;
+}
+
+.container form .inputBox .box .icon{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color: #ff3c74;
+    border-radius: 50%;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 1.15em;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(255, 255, 255, 0.25),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container form .inputBox .box input{
+    position: relative;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 0, 0, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+}
+.container form .inputBox .box input::placeholder{
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    color: #6d6d6d;
+    text-transform: none;
+}
+.container form .inputBox .box input[type="submit"]{
+    background-color: #1f83f2;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(0, 255, 255, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.container form .inputBox .box input[type="submit"]:hover{
+    filter: brightness(1.1);
+}
+.container label{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    display: flex;
+    align-items: center;
+}
+
+.container form label input{
+    margin-right: 5px;
+}
+
+.container form .forgot{
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85em;
+    text-decoration: none;
+}
+
+.container.disclaimer{
+    display: flex;
+    min-width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.container.disclaimer span{
+    margin-left: 1px;
+    color: #2f363f;
+    background-color: #fff;
+    border-left: none;
+}
+
+.container.disclaimer label{
+    padding: 10px 0;
+    color: #ffffff;
+    text-transform: initial;
+}
+.container.disclaimer label::before{
+    content: '❌';
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgb(249, 165, 165);
+    border-radius: 50%;
+    font-size: 10px;
+    box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.25),
+    inset 2px 2px 5px rgba(249, 165, 165, 0.35),
+    inset -3px -3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.container.disclaimer label:last-child::before{
+    content: '✔️';
+    background-color: rgb(194, 244, 123);
+}

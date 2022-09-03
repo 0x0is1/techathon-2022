@@ -1,0 +1,166 @@
+.home-content-main{
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+}
+.home-content-main .profile {
+    min-height: 80vh;
+    border-radius: 10px;
+    border: 1px solid rgb(182, 182, 193);
+    overflow: hidden;
+    margin: 20px 50px;
+    background-color:#ffffff;
+}
+
+.user-background-container{
+    min-height: 30vh;
+    background-color: rgb(67, 67, 67);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.user-background-container *{
+    font-size: 1.4em;
+    font-weight: 300;
+    display: none;
+    opacity: 0;
+    transition: all 0.4s ease;
+    color: rgb(182, 182, 193);
+}
+
+.user-background-container:hover *{
+    display: block;
+    opacity: 1;
+}
+
+.user-background-container:hover{
+    background-color: rgba(67, 67, 67, 0.9);
+    cursor: pointer;
+}
+
+.profile-pic-container{
+    position: absolute;
+}
+
+.profile-pic-container img{
+    margin-top: -90px;
+    margin-left: 30px;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid blueviolet;
+    transition: all 0.4s ease;
+}
+
+.profile-pic-container::after{
+    background-color:rgb(93, 255, 5);
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    content: '';
+    margin-left: -30px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+
+.home-content-main .profile .profile-details{
+    padding: 60px 20px;
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+
+.home-content-main .profile .profile-details .display-name{
+    font-size: 1.8em;
+    font-weight: 300;
+}
+
+.home-content-main .profile .profile-details .username{
+    color: rgb(80, 78, 78);
+    font-size: 1.1em;
+    padding-left: 4px;
+}
+
+.home-content-main .profile .profile-details .department,
+.home-content-main .profile .profile-details .school,
+.home-content-main .profile .profile-details .role
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    bottom: -10px;
+    font-size: 20px;
+    color: rgb(80, 78, 78);
+
+}
+
+.home-content-main .profile .profile-details .department i,
+.home-content-main .profile .profile-details .school i,
+.home-content-main .profile .profile-details .role i
+{
+    padding: 3px;
+    font-size: 1.3em;
+}
+
+.home-content-main .profile .profile-details .follow{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    top: 30px;
+    background-color:#0a66c2;
+    width: 120px;
+    border-radius: 50px;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.home-content-main .profile .profile-details .follow:hover{
+    background-color: #2586e7;
+}
+
+.home-content-main .profile .profile-details .follow.visit i{
+    padding: 3px;
+}
+
+.home-content-main .profile .profile-details .bio{
+    margin: 2px;
+}
+.home-content-main .profile.orgs{
+    min-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+
+}
+.home-content-main .profile.orgs .orgs{
+    display: flex;
+    align-items: center;
+}
+
+.home-content-main .profile.orgs .orgs i{
+    width: 50px;
+    height: 50px;
+    /* background-color:red; */
+    margin: 10px;
+    border: 1px solid rgb(67, 67, 67);
+    border-radius: 10px;
+}
+
+.home-content-main .profile.orgs p{
+    padding-left: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: -15px;
+    max-width: 200px;
+    background-color: #e4e9f7;
+    border: 1px solid rgb(182, 182, 193);
+    border-radius: 10px;
+    overflow: hidden;
+    /* padding-bottom: 50px; */
+}

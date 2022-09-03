@@ -1,0 +1,283 @@
+{
+    "statusCode": 200,
+    "message": "Logged In Successfully.",
+    "data": {
+        "unread_notification_count": 0,
+        "workspaces_info": [
+            {
+                "domain": "lpu.in",
+                "email": "12114479@fuguchat.com",
+                "default_manager_fugu_user_id": 2135174,
+                "full_name": "Suryabhan Singh : 12114479",
+                "user_image": "https://ums.lpu.in/lpuums/DisplayImageForPowerBi.aspx?id=122c1638-94cb-4fce-a22f-edc443e7f8cd",
+                "role": "USER",
+                "user_id": 100017712,
+                "full_domain": "lpulive.lpu.in",
+                "domain_id": 9,
+                "workspace_name": "LPU Live",
+                "attendance_token": null,
+                "scrum_token": null,
+                "workspace_image": {
+                    "workspace_image_url": "https://fchat.s3.ap-south-1.amazonaws.com/default/DZs0gmL776.1577170917567.png",
+                    "workspace_thumbnail_image": "https://fchat.s3.ap-south-1.amazonaws.com/default/mlyVCLV7W4.1577170917539.png"
+                },
+                "colors": {
+                    "icon_color": "#f68121",
+                    "theme_color": "#f68121",
+                    "header_color": "#242424",
+                    "loader_color": "#f68121",
+                    "scroll_color": "#f68121",
+                    "theme_color_light": "#e6f0f9",
+                    "date_divider_color": "#e1f5fe",
+                    "app_color_highlight": "#080808",
+                    "sender_chat_bubble_color": "#ECF4FB"
+                },
+                "logo": "https://fchat.s3.ap-south-1.amazonaws.com/default/7CnP1L7dmM.1576735615186.png",
+                "fav_icon": "https://fchat.s3.ap-south-1.amazonaws.com/default/99oo0pikjz.1576735730561.png",
+                "app_name": "LPU Live Chat ",
+                "workspace": "lpu-demo1",
+                "hrm_api_key": null,
+                "workspace_id": 6354,
+                "business_id": 6354,
+                "fugu_user_id": 100017712,
+                "fugu_secret_key": "4fd25f3522016f68001c2f00996bbbd1",
+                "workspace_status": "ENABLED",
+                "location": "",
+                "department": "Computer Science  and Engineering (P132)",
+                "auto_download_level": "",
+                "gallery_media_visibility": 1,
+                "contact_number": "",
+                "designation": "",
+                "unread_notification_count": 0,
+                "status": "ENABLED",
+                "user_unique_key": "TdLfYXO0iG",
+                "notification_level": "ALL_CHATS",
+                "user_properties": {
+                    "suspend_call": false,
+                    "max_group_member": 30,
+                    "is_create_group_allowed": false,
+                    "is_one_to_one_chat_allowed": true
+                },
+                "user_status": "ENABLED",
+                "properties": {
+                    "is_old_flow": true,
+                    "signup_mode": 1,
+                    "conference_link": "https: //conferencing.fugu.chat",
+                    "is_white_labelled": true,
+                    "is_self_chat_enabled": true,
+                    "is_create_workspace_enabled": false
+                },
+                "is_invite_email_enabled": 1,
+                "android_app_link": "https://play.google.com/store/apps/details?id=com.officechat",
+                "payment_gateway_creds": null,
+                "hrm_configuration": null,
+                "is_conferencing_enabled": null,
+                "config": {
+                    "any_user_can_invite": "0",
+                    "audio_call_enabled": "1",
+                    "clear_chat_history": "1",
+                    "create_conference_roles": "1",
+                    "create_meet_permission": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER",
+                        "GUEST",
+                        "PAYING_GUEST"
+                    ],
+                    "create_workspace_permission": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER"
+                    ],
+                    "delete_message": "1",
+                    "delete_message_duration": "900",
+                    "delete_message_role": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER",
+                        "GUEST",
+                        "PAYING_GUEST"
+                    ],
+                    "edit_message": "1",
+                    "edit_message_duration": "900",
+                    "edit_message_role": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER",
+                        "GUEST",
+                        "PAYING_GUEST"
+                    ],
+                    "enable_create_group": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER"
+                    ],
+                    "enable_one_to_one_chat": [
+                        "ADMIN",
+                        "OWNER",
+                        "USER",
+                        "GUEST",
+                        "PAYING_GUEST"
+                    ],
+                    "enable_public_invite": "0",
+                    "free_invite": "2",
+                    "fugu_bot": "1",
+                    "hide_contact_number": "1",
+                    "hide_email": "1",
+                    "is_google_meet_enabled": "true",
+                    "is_guest_allowed": "1",
+                    "is_secret_santa_enabled": "1",
+                    "max_conference_participants": 20,
+                    "max_member_in_group": "0",
+                    "per_user_invite_price": "25",
+                    "poll_enabled": "1",
+                    "punch_in_permission": "NONE",
+                    "punch_out_permission": "NONE",
+                    "search_message": "1",
+                    "signup_mode": "1",
+                    "video_call_enabled": "1",
+                    "all_roles": "1",
+                    "is_group_live_stream_enabled": "1"
+                },
+                "en_user_id": "30ce3c05975ef9b3a328676dfdb734b7",
+                "installed_apps": [
+                    4,
+                    5,
+                    6,
+                    9,
+                    10
+                ]
+            }
+        ],
+        "invitation_to_workspaces": [],
+        "open_workspaces_to_join": [],
+        "turn_credentials": {
+            "turn_api_key": "VPlwuCJcizZye2znMflmJ75x0IraJ5cQ",
+            "ice_servers": {
+                "stun": [
+                    "stun:turnserver.fuguchat.com:19305"
+                ],
+                "turn": [
+                    "turn:turnserver.fuguchat.com:19305?transport=UDP",
+                    "turn:turnserver.fuguchat.com:19305?transport=TCP",
+                    "turns:turnserver.fuguchat.com:5349?transport=UDP",
+                    "turns:turnserver.fuguchat.com:5349?transport=TCP"
+                ]
+            },
+            "username": "fuguadmin",
+            "credential": "3FXCGBCnDfqsrOqs"
+        },
+        "whitelabel_details": {
+            "workspace_id": 6529,
+            "workspace_name": "Spaces",
+            "app_name": "LPU Live - Messenger",
+            "full_domain": "lpulive.lpu.in",
+            "domain_id": 9,
+            "default_manager_fugu_user_id": null,
+            "workspace": "spaces",
+            "logo": "https://fchat.s3.ap-south-1.amazonaws.com/default/7CnP1L7dmM.1576735615186.png",
+            "google_client_id": null,
+            "fav_icon": "https://fchat.s3.ap-south-1.amazonaws.com/default/99oo0pikjz.1576735730561.png",
+            "domain": "lpu.in",
+            "colors": {
+                "icon_color": "#f68121",
+                "theme_color": "#f68121",
+                "header_color": "#242424",
+                "loader_color": "#f68121",
+                "scroll_color": "#f68121",
+                "theme_color_light": "#e6f0f9",
+                "date_divider_color": "#e1f5fe",
+                "app_color_highlight": "#080808",
+                "sender_chat_bubble_color": "#ECF4FB"
+            },
+            "properties": {
+                "is_old_flow": true,
+                "signup_mode": 1,
+                "conference_link": "https://conferencing.fugu.chat",
+                "is_white_labelled": true,
+                "is_self_chat_enabled": true,
+                "is_create_workspace_enabled": false
+            },
+            "android_app_link": "https://play.google.com/store/apps/details?id=com.officechat",
+            "android_latest_version": 100,
+            "android_critical_version": 100,
+            "ios_app_link": "https://itunes.apple.com/us/app/fugu-simple-work-chat/id1336986136?ls=1&mt=8",
+            "ios_latest_version": 100,
+            "ios_critical_version": 100,
+            "show_meet_tab": 0
+        },
+        "user_info": {
+            "user_id": "TdLfYXO0iG",
+            "username": "12114479",
+            "email": "12114479@fuguchat.com",
+            "full_name": "Suryabhan Singh : 12114479",
+            "user_properties": {
+                "web_theme": {
+                    "theme_id": 2
+                }
+            },
+            "auth_user_id": null,
+            "access_token": "$2a$10$HSoYKA58cmpMEm4keUsO7u.rRGm32q5M.TEauacyPuqajswpYeOB6",
+            "contact_number": "",
+            "user_image": "https://fchat.s3.ap-south-1.amazonaws.com/default/DL0DDaBMPD.1634625993929.jpg",
+            "original_image": "https://fchat.s3.ap-south-1.amazonaws.com/default/VRW2ceD0GD_1634625993768.jpg",
+            "onboard_source": "FUGU",
+            "attributes": {},
+            "apple_user_identifier": null,
+            "user_status": "",
+            "timezone": "330",
+            "lpu_access_token": "d160f7b8-582a-4587-84ea-0528750ca089",
+            "workspace_properties": {
+                "is_old_flow": true,
+                "signup_mode": 1,
+                "conference_link": "https://conferencing.fugu.chat",
+                "is_white_labelled": true,
+                "is_self_chat_enabled": true,
+                "is_create_workspace_enabled": false
+            },
+            "user_channel": "45edf01b05c2314437282b655ce3d9b0ce456a04",
+            "push_token": "9TdLfYXO0iGundefined",
+            "has_google_contacts": false
+        },
+        "restricted_email_domains": [
+            "aol.com",
+            "att.net",
+            "comcast.net",
+            "facebook.com",
+            "gmail.com",
+            "gmx.com",
+            "googlemail.com",
+            "google.com",
+            "hotmail.com",
+            "hotmail.co.uk",
+            "mac.com",
+            "me.com",
+            "mail.com",
+            "msn.com",
+            "live.com",
+            "sbcglobal.net",
+            "verizon.net",
+            "yahoo.com",
+            "yahoo.co.uk",
+            "fuguchat.com"
+        ],
+        "supported_file_type": [
+            "image",
+            "video",
+            "audio",
+            "file"
+        ],
+        "fugu_config": {
+            "supported_file_type": [
+                "image",
+                "video",
+                "audio",
+                "file"
+            ],
+            "max_upload_file_size": 104857600,
+            "turn_api_key": "VPlwuCJcizZye2znMflmJ75x0IraJ5cQ",
+            "socket_timeout": 90,
+            "is_new_conference_enabled": 1
+        }
+    }
+}
