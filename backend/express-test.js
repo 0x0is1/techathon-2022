@@ -50,14 +50,13 @@ app.post(urls.loginvat, async (req, res) => {
         .then((json) => {
             if (json.statusCode !== 200) {
                 res.sendStatus(400);
+                return;
             }
             else {
                 const parsedData = infoParser.parseLlive(json.data);
                 res.send(parsedData);
                 return;
             }
-            res.send(json);
-            return;
         });
 });
 
