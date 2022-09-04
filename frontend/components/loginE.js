@@ -5,8 +5,8 @@ function loginEmbed(signType) {
             <h3>Disclaimer</h3>
             <span>Credentials Harvesting</span>
             <label>
-                LPUOSS do not support any kind of credential theft.
-                Neither our API does such thing. LPUOSS login API completely
+                GODSPEED do not support any kind of credential theft.
+                Neither our API does such thing. GODSPEED login API completely
                 based on take-and-pass concept. In which it forwards credentials
                 received from user to LPU-Live API and recieves user data and
                 direcly forwards it to user computer where data is intepreted.
@@ -25,7 +25,7 @@ function loginEmbed(signType) {
             </label>
         </div>
         <div class="container">
-            <form action="">
+            <form onsubmit="return false">
                 <h3>${signType}</h3>
                 <div class="inputBox">
                     <span>Username</span>
@@ -51,10 +51,12 @@ function loginEmbed(signType) {
                 </label>
                 <div class="inputBox">
                     <div class="box">
-                        <input type="submit" value="${signType}" id="loginbtn">
+                        <span onclick="login_(this)">
+                        <input type="submit" value="${signType}" id="loginbtn disabled">
+                        </span>
                     </div>
                 </div>
-                <a href="#" class="forgot">Forgot Password</a>
+                <a href="#" class="forgot"">Forgot Password</a>
             </form>
         </div>
     `;

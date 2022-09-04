@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdn.tiny.cloud/1/17ckcho1088f0csgrd08kx6q9qonw6lchcfkli9tjbofdi7z/tinymce/6/tinymce.min.js"
+        referrerpolicy="origin"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Editor</title>
+    </head>
+
+<body style="position:relative">
+
+    <form method="post">
+    <textarea style="height: 85vh;" id="myTextArea">
+     <h1>Your title</h1>
+     <p>Write something here...</p>
+  </textarea>
+    <script>
+        tinymce.init({
+            selector: 'textarea',
+            plugins: 'a11ychecker advcode casechange export formatpainter image editimage linkchecker autolink lists checklist media mediaembed pageembed permanentpen powerpaste table advtable tableofcontents tinycomments tinymcespellchecker',
+            toolbar: 'a11ycheck addcomment showcomments casechange checklist code export formatpainter image editimage pageembed permanentpen table tableofcontents',
+            toolbar_mode: 'floating',
+            tinycomments_mode: 'embedded',
+            tinycomments_author: 'Author name',
+        });
+    </script>
+    <style>
+        body {
+            min-height: 100vh;
+            background-image: linear-gradient(rgb(234, 134, 134), rgb(100, 173, 251));
+            background-size: contain;
+        }
+
+        .button {
+            position: fixed;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            right: 0;
+            font-size: 25px;
+            margin-right: 50px;
+            margin-top: 10px;
+            height: 50px;
+            color: #fff;
+            background: rgb(132, 132, 246);
+            border: 1px solid rgb(242, 242, 251);
+            border-radius: 10px;
+            cursor: pointer;
+        }
+
+        .button-one {
+            color: rgb(132, 132, 246);
+            background: #fff;
+            border: 1px solid rgb(171, 171, 171);
+            right: 110px;
+            width: 100px;
+        }
+    </style>
+    <span class="button button-one" id="dis-but">Discard</span>
+    <span class="button" id="post-but">Post</input>
+    </form>
+    <script>
+        localStorage["lact"] = "d160f7b8-582a-4587-84ea-0528750ca089";
+        localStorage["act"] = "$2a$10$HSoYKA58cmpMEm4keUsO7u.rRGm32q5M.TEauacyPuqajswpYeOB6";
+        document.getElementById("dis-but").addEventListener("click", () => {
+            window.location.reload(true);
+        });
+        document.getElementById("post-but").addEventListener("click", ()=>{
+        var raw_data = tinymce.get('myTextArea').getContent();
+        console.log(raw_data)
+        var title = raw_data.match("<h1>(.*)</h1>")[1];
+        var content = raw_data.replace(title, "");
+        var postDate = new Date().toLocaleDateString();
+        let headersList = {
+        "Accept": "*/*",
+        "Content-Type": "application/json"
+        }
+
+        let bodyContent = JSON.stringify({
+        "lact": localStorage["lact"],
+        "act": localStorage["act"],
+        "tz": 330
+        });
+        var url = new URL("http://127.0.0.1:3000/loginvat");
+
+        let response = fetch(url, {
+        method: "POST",
+        body: bodyContent,
+        headers: headersList
+        }).then(resp=>resp.json()).then(json=>{
+        localStorage["lact"] = json.lact;
+        localStorage["act"] = json.act;
+        document.getElementsByClassName("profile-name")[0].innerText = json.full_name;
+        document.getElementsByClassName("job")[0].innerText = json.username;
+        document.getElementsByClassName("profile-content")[0].innerHTML = `<img src="${json.user_image}"
+            alt="profile picture">`
+        alert("logged in successfully");
+
+        let bodyContent = JSON.stringify(
+            {
+                "title":title,
+                "content": content,
+                "author": json.full_name,
+                "postDate": postDate
+            });
+        url = new URL("http://127.0.0.1:3000/post-article")
+        fetch(url, {
+            method: "POST",
+            body: bodyContent,
+            headers: headersList
+        }).then(resp=>resp.json).then(json=>alert("article posted"));
+        });
+        
+    });
+    </script>
+
+</body>
+
+</html>

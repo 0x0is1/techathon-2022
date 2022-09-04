@@ -11,7 +11,7 @@ con.connect(function (err) {
     console.log("Connected!");
 });
 
-const getData = (command) => {
+const RunCommand = (command) => {
         return new Promise((resolve, reject) => {        
     con.query(command, (err, result) => {
     if (err) {
@@ -25,5 +25,5 @@ const getData = (command) => {
 }
 
 module.exports = {
-    getData
+    RunCommand
 };

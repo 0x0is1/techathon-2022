@@ -5,7 +5,7 @@ return `
 <div class="sidebar close">
     <div class="logo-details">
         <i class='bx bx-code'></i>
-        <span class="logo_name">LPUOSS</span>
+        <span class="logo_name">GODSPEED</span>
     </div>
     <ul class="nav-links">
         <li class="actv active" id="home">
@@ -36,7 +36,7 @@ return `
             </ul>
         </li>
         <li class="actv">
-            <a href="#">
+            <a href="../pages/post.html">
                 <i class='bx bx-message-square-add'></i>
                 <span class="link-name">
                     Create
@@ -95,7 +95,7 @@ return `
                         Unregistered
                     </div>
                 </div>
-                <i class='bx bx-log-out'></i>
+                <i class='bx bx-log-out' onclick="logout()"></i>
             </div>
         </li>
     </ul>
@@ -104,6 +104,21 @@ return `
     <div class="home-content">
         <i class='bx bx-menu'></i>
         <span class="text page-title">Home</span>
+        <div class="filter">
+            <div class="search">
+                <input id="searchbox" type="text" placeholder="Search here..."></input>
+            </div>
+            <div class="sort">
+            <select onchange="change(this);">
+                <option>
+                    Popular
+                </option>
+                <option selected>
+                    Latest
+                </option>
+            </select>
+        </div>
+        </div>
     </div>
     <div class="home-content-main"></div>
 </section>
