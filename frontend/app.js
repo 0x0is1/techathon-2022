@@ -5,6 +5,8 @@ import * as Sidebar from "./utils/sidebar.js";
 import * as ProfileE from "./components/profileE.js"
 import * as HomeE from "./components/homeE.js"
 
+
+
 window.onload = () => {
     // embed sidebar
     document.getElementsByTagName("body")[0].innerHTML = SidebarE.sidebarEmbed();
